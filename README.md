@@ -1,23 +1,40 @@
-# Spring Boot REST API Demo
+# Spring AOP Demo (Spring Boot 3.5 + Java 21)
 
-A simple and beginner-friendly Spring Boot project that demonstrates how to build a RESTful API using Spring Boot, Spring Web, and optionally Spring Data JPA.
+This is a simple Spring Boot project that demonstrates **Spring AOP (Aspect-Oriented Programming)** using AspectJ annotations.
 
-## 🚀 Features
+### ✅ Features
+- Logs method execution using AOP
+- Uses `@Aspect`, `@Before`, `@After`, and `@Around` annotations
 
-- CRUD operations using REST API
-- Layered architecture (Controller, Service, Repository)
-- Uses Spring Boot 3.5
-- PostgreSQL configuration
-- JSON request/response handling with Jackson
-- Exception handling and validation
+---
 
-## 🛠 Tech Stack
-
+## 🔧 Technologies Used
 - Java 21
-- Spring Boot
-- Spring Web
-- Spring Data JPA
-- PostgreSQL
+- Spring Boot 3.5.x
+- Spring AOP
 - Maven
-- Lombok
-- Postman
+
+---
+
+## 📁 Project Structure
+
+- spring-aop-demo/
+- ├── aspect/
+- │ └── LoggingAspect.java
+- ├── service/
+- │ └── DemoService.java
+- ├── SpringAopDemoApplication.java
+- └── application.properties
+
+---
+
+## ▶️ How to Run
+
+1. Make sure Java 21 is installed
+2. Clone the project
+3. Open it in your IDE
+4. Run the `SpringBootRestApplication` class
+
+Or use terminal:
+```bash
+mvn spring-boot:run
